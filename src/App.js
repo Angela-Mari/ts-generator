@@ -150,7 +150,7 @@ function App() {
                 </Offcanvas.Header>
                 <Offcanvas.Body className='nav-color'>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link style={{color:"white"}} href="https://www.angelageorge.me">Home</Nav.Link>
+                    <Nav.Link style={{color:"white"}} href="https://www.angelageorge.com">Home</Nav.Link>
                     <Nav.Link style={{color:"white"}} href="https://github.com/Angela-Mari/ts-generator">GitHub</Nav.Link>
                     <Nav.Link style={{color:"white"}} href="https://github.com/shaynak/taylor-swift-lyrics">Lyric Source</Nav.Link>
                   </Nav>

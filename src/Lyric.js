@@ -57,9 +57,9 @@ class Lyric extends React.Component {
         </Tooltip>
         }
         >
-        <Card style={{ minWidth: '10rem', maxWidth: '18rem' }}>
+        <Card style={{ minWidth: '10rem', maxWidth: '18rem' }} onClick={this.lyricCopy}>
         <Card.Header as="h5">"{this.props.songTitle}"<br/><i>{this.props.album}</i></Card.Header>
-            <Card.Body onClick={this.lyricCopy}>
+            <Card.Body>
                 <Card.Title></Card.Title>
                 <Card.Text className="mb-2 text-muted">
                 {this.props.previous}
