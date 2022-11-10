@@ -13,5 +13,11 @@ code {
 }
 
 .nav-text {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #48597b !important;
+  border-color: #48597b !important;
 }

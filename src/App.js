@@ -128,7 +128,7 @@ function App() {
     <Stack gap={3}>
           
           <Navbar 
-            style={{background: "linear-gradient(to right, #50a7e0, #813c60, #ae1e4c, #a85d36, #9c9c9c, #d6b0d6, #787a6c, #7e5c43, #d9c78f)", paddingRight:"1rem"}}
+            style={{background: "#48597b", paddingRight:"1rem"}}
             expand="lg"
             variant="dark"
           >
@@ -159,11 +159,11 @@ function App() {
             
           </Navbar>
           <Container>
-            Hello fellow Swifty! 
+            Hello fellow Swiftie!
             Are you looking for the perfect lyric for your insta post? 
             Type some keywords then click generate to acheive the caption of your wildest dreams 😘
             <br/>
-            Now including Red (Taylor's Version) ❤️
+            Now including 🕰 ✨ Midnights ✨ 🕰
           </Container>
           <Container>
           <Form noValidate validated={validated}>
