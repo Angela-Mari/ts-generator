@@ -22,13 +22,23 @@
   color: #61dafb;
 }
 
+h2 {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold !important;
+  color: #48597b;
+}
+
+.giphy{
+  width:100%;height:0;padding-bottom:176%;position:relative;
+}
+
 @media (max-width: 992px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
   .nav-color {
     background:#202020;
   }
-  
 }
+  
 
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */
@@ -50,4 +60,10 @@
 
 .nav-link {
   color:pink;
+}
+
+.spotify {
+  width:100%;
+  height:500px; 
+  border-radius:25px;
 }
