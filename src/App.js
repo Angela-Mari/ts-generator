@@ -126,18 +126,19 @@ function App() {
     } ,[])
   
   return (
-    <div>
+    <Col style={{overflow:'hidden'}}>
+    <Row>
           
           <Navbar 
-            style={{background: "#48597b", paddingRight:"1rem"}}
+            style={{background: "#48597b", paddingLeft:"2rem"}}
             expand="lg"
             variant="dark"
           >
-              <Navbar.Brand style={{color: 'white', paddingLeft:'1rem'}} >
+              <Navbar.Brand style={{color: 'white'}} >
                   <span className="nav-text">Taylor Swift </span> 
                   <span style={{color: 'white', paddingLeft:"0.5rem"}}>Caption Generator</span>                  
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} style={{marginLeft:"1rem"}}/>
+              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} style={{marginLeft:"0rem", marginRight:"0.5rem"}}/>
 
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-lg`}
@@ -163,7 +164,7 @@ function App() {
             
               <Row>
                 
-              <Col xs = {12} md ={12} lg ={9} xl={9} style={{marginTop:"0.5rem"}}>
+              <Col xs = {12} md ={12} lg ={9} xl={9} style={{marginTop:"0.5rem", paddingRight:"2.5rem"}}>
               Hello fellow Swiftie!
               Are you looking for the perfect lyric for your insta post? 
               Type some keywords then click generate to acheive the caption of your wildest dreams 😘
@@ -171,7 +172,7 @@ function App() {
               <b>Now including 🕰 ✨ Midnights ✨ 🕰</b>
            
               <h2 style={{marginTop:"0.5rem"}}>Search for Lyrics</h2>
-              <Form noValidate validated={validated}>
+              <Form noValidate validated={validated} style={{paddingRight:"2.5rem"}}>
               <Form.Group>
               </Form.Group>
               <Form.Group className="mb-3" controlId="collectKeywords">
@@ -209,8 +210,8 @@ function App() {
                 <></>
                 }
               </Col>
-              <Col xs = {3} md ={3} lg ={3} xl={3}>
-                <Row>
+              <Col xs = {12} md ={6} lg ={3} xl={3} style={{marginTop:"1rem", paddingRight:"2.5rem"}}>
+              <Col xs ={6} md={12} lg ={12} xl ={12}>
                 <iframe 
                   title="Spotify Eras Playlist"
                   className='spotify'
@@ -220,8 +221,8 @@ function App() {
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 >
                 </iframe>
-                </Row>
-                <Row style={{marginTop:"0.5rem", paddingLeft:"0.5rem", paddingRight:"1.5rem"}}>
+                </Col>
+                <Col xs ={6} md={12} lg ={12} xl ={12}>
                 <div className="giphy">
                     <iframe 
                       title="call it what you want to"
@@ -232,14 +233,15 @@ function App() {
                       frameBorder="0" class="giphy-embed" 
                       allowFullScreen></iframe>
                     </div>
-                </Row>
+                    </Col>
               </Col>
               </Row>
           </div>
           
 
           
-    </div>
+    </Row>
+    </Col>
   );
 }
 
