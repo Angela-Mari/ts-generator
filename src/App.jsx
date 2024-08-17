@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Form, Navbar, Nav, Spinner, Row, Offcanvas, Col} from 'react-bootstrap';
 import Lyric from './Lyric';
 import { useEffect, useState } from 'react';
-import ts_lyrics from './taylor_swift_lyrics.csv';
 // for reading the csv
 import Masonry from "react-masonry-css";
 import { csv } from 'd3';
@@ -21,6 +20,13 @@ function App() {
   const [showLyrics, setShowLyrics] = useState("no");
   const [lyricCardsArray, setLyricCards] = useState([])
 
+  const Home = () => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/",
+      title: "Home"
+    });
+  }
   
   const handleCopy = (lyric) => {
     navigator.clipboard.writeText(lyric.Lyric)    
@@ -107,7 +113,7 @@ function App() {
   }
 
   useEffect(()=> {
-    csv(ts_lyrics).then(data => {
+    csv("https://raw.githubusercontent.com/shaynak/taylor-swift-lyrics/main/lyrics.csv").then(data => {
       setData(data)
 
     });
@@ -167,9 +173,9 @@ function App() {
               <Col xs = {12} md ={12} lg ={9} xl={9} style={{marginTop:"0.5rem", paddingRight:"2.5rem"}}>
               Hello fellow Swiftie!
               Are you looking for the perfect lyric for your insta post? 
-              Type some keywords then click generate to acheive the caption of your wildest dreams 😘
+              Type some keywords then click generate to acheive the caption of your wildest dreams (TV) 😘
               <br/>
-              <b>Now including 🕰 ✨ Midnights ✨ 🕰</b>
+              <b></b>
            
               <h2 style={{marginTop:"0.5rem"}}>Search for Lyrics</h2>
               <Form noValidate validated={validated} style={{paddingRight:"2.5rem"}}>
